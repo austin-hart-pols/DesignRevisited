@@ -1,0 +1,382 @@
+---
+title: "REVISITING STUDY DESIGN"
+subtitle: "The quest for validity"
+author: "Austin Hart"
+institute: "American University"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [default, rladies, rladies-fonts]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  message=FALSE, warning=FALSE, eval = TRUE, echo = FALSE, 
+  fig.align = 'center', dev='svg'
+)
+```
+
+
+```{r results='hide'}
+library(tidyverse)
+library(magrittr)
+library(kableExtra)
+
+setwd("C:\\Users\\ahart\\Dropbox\\SIS 600 AH\\2021S 600\\content\\w07 associations\\GroupDiffs")
+
+load('DCPS testing.RData')
+```
+
+# Plan for today
+
+Rethinking your approach to causal inference.  
+
+- Internal validity and research design
+  - Hurdles to causality
+  - Designs for inference
+  - Evaluating claims in practice
+
+- Ex 1: Quota removal and representation
+
+- Ex 2: Voting Rights Act
+
+
+---
+class: middle, right, inverse
+
+# INTERNAL VALIDITY
+### and how to find it
+
+
+---
+# The road to internal validity
+
+.left-column[
+
+### What is it?
+
+
+]
+
+.right-column[
+
+> A causal claim is internally valid if it identifies the true, unbiased effect of a treatment, T, on an outcome, Y. 
+> 
+> Otherwise, the claim is biased or spurious. 
+
+]
+
+---
+# The road to internal validity
+
+.left-column[
+
+### What is it?
+
+### Criteria for assessment
+
+]
+
+.right-column[
+
+- Evidence of **empirical association** between T and Y? 
+
+- **Causal mechanism** linking exposure to T and change in Y 
+
+- Rules out **reverse causal claim** that Y is the cause of T 
+
+- Controls for/Conditions on **potential confounds**. 
+
+Note: different criteria for ITS designs.
+
+]
+
+
+---
+# The road to internal validity
+
+.left-column[
+
+### What is it?
+
+### Criteria for assessment
+
+### Role of design
+
+]
+
+.right-column[
+
+- Experiment (RCT)
+  - Randomly assigns cases to T
+  - Control!! (over confounds)  
+
+- Interrupted Time Series (ITS)
+  - Response to non-random intervention
+  - Beware unique "trend" issues
+  - Comparison cases are critical
+
+- Observational
+  - Simply record T and Y
+  - Then fight like hell
+  
+
+]
+
+
+
+---
+# The road to internal validity
+
+.left-column[
+
+### What is it?
+
+### Criteria for assessment
+
+### Role of design
+
+### In practice
+
+]
+
+.right-column[
+
+- Diagnose the causal claim 
+
+- Identify the study design 
+
+- Locate evidence of association 
+
+- Work through the hurdles. 
+
+]
+
+
+---
+class: inverse, middle, right
+
+# Quotas and representation
+### Bhavnani (2009)
+
+
+---
+# Diagnosing a claim (Bhavnani)
+
+.left-column[
+
+### Main question
+
+]
+
+--
+
+.right-column[
+  
+- What is the effect of electoral reserves on women's representation after the reserve is withdrawn?
+
+- More broadly, how does seeing/experiencing a woman in office influence attitudes about women in office?
+
+]
+
+---
+# Diagnosing a claim (Bhavnani)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+]
+
+--
+
+.right-column[
+  
+- Experiment: India randomly reserves 1/3 of local seats for women **at random** each election cycle
+
+- Units: wards in Mumbai, India
+
+- Key comparison
+  - 81 *control* wards: no reserve in 1997 or 2002
+  - 37 *treatment* wards: reserve in 1997 removed in 2002
+]
+
+
+---
+# Diagnosing a claim (Bhavnani)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+### Evidence
+
+]
+
+.right-column[
+  
+> Do "treated" wards (relative to control wards) see more women elected, more women running, etc *after* the reserve is gone?
+  
+  
+See Table 3.
+  
+]
+
+
+
+---
+# Diagnosing a claim (Bhavnani)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+### Evidence
+
+### Validity
+
+]
+
+.right-column[
+  
+- Association?
+
+- Mechanism?
+
+- Time order?
+
+- Confounding bias?
+
+]
+
+
+---
+class: inverse, middle, right
+
+# Literacy tests and the VRA
+### Cascio and Washington (2014)
+
+
+---
+# Diagnosing a claim (Cascio and Washington)
+
+.left-column[
+
+### Main question
+
+]
+
+--
+
+.right-column[
+  
+- What is the effect of expanding black voting rights on blacks' share of public spending?
+
+- Specifically, how did the elimination of literacy tests impact state spending on education?
+
+]
+
+---
+# Diagnosing a claim (Cascio and Washington)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+]
+
+--
+
+.right-column[
+  
+- ITS: VRA eliminates literacy tests in Southern states that still used them at the time.  
+
+- Units: counties in US Southern states
+
+- Key comparison
+  - 477 *control* counties: NO lit test in 1965
+  - 625 *treatment* counties: YES literacy test
+]
+
+
+---
+# Diagnosing a claim (Cascio and Washington)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+### Evidence
+
+]
+
+.right-column[
+  
+> After the VRA, did state transfers to higher black population counties increase more in "treated"/literacy test counties (relative to control counties)?
+  
+  
+See, e.g., Figures 1 and 2.
+  
+]
+
+
+
+---
+# Diagnosing a claim (Cascio and Washington)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+### Evidence
+
+### Validity
+
+]
+
+.right-column[
+  
+- History?
+
+- Maturation?
+
+- Regression?
+
+- Instability?
+
+- Instrumentation or testing?
+
+]
+
+
+---
+class: inverse
+
+# Wrapping up
+
+### Internal validity
+
+- It's a researcher thing; not a software thing
+
+- Inextricably linked to research design
+
+- No "1 grand test" of validity
+

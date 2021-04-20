@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>REVISITING STUDY DESIGN</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Austin Hart" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# REVISITING STUDY DESIGN
+## The quest for validity
+### Austin Hart
+### American University
+
+---
+
+
+
+
+
+
+
+
+# Plan for today
+
+Rethinking your approach to causal inference.  
+
+- Internal validity and research design
+  - Hurdles to causality
+  - Designs for inference
+  - Evaluating claims in practice
+
+- Ex 1: Quota removal and representation
+
+- Ex 2: Voting Rights Act
+
+
+---
+class: middle, right, inverse
+
+# INTERNAL VALIDITY
+### and how to find it
+
+
+---
+# The road to internal validity
+
+.left-column[
+
+### What is it?
+
+
+]
+
+.right-column[
+
+&gt; A causal claim is internally valid if it identifies the true, unbiased effect of a treatment, T, on an outcome, Y. 
+&gt; 
+&gt; Otherwise, the claim is biased or spurious. 
+
+]
+
+---
+# The road to internal validity
+
+.left-column[
+
+### What is it?
+
+### Criteria for assessment
+
+]
+
+.right-column[
+
+- Evidence of **empirical association** between T and Y? 
+
+- **Causal mechanism** linking exposure to T and change in Y 
+
+- Rules out **reverse causal claim** that Y is the cause of T 
+
+- Controls for/Conditions on **potential confounds**. 
+
+Note: different criteria for ITS designs.
+
+]
+
+
+---
+# The road to internal validity
+
+.left-column[
+
+### What is it?
+
+### Criteria for assessment
+
+### Role of design
+
+]
+
+.right-column[
+
+- Experiment (RCT)
+  - Randomly assigns cases to T
+  - Control!! (over confounds)  
+
+- Interrupted Time Series (ITS)
+  - Response to non-random intervention
+  - Beware unique "trend" issues
+  - Comparison cases are critical
+
+- Observational
+  - Simply record T and Y
+  - Then fight like hell
+  
+
+]
+
+
+
+---
+# The road to internal validity
+
+.left-column[
+
+### What is it?
+
+### Criteria for assessment
+
+### Role of design
+
+### In practice
+
+]
+
+.right-column[
+
+- Diagnose the causal claim 
+
+- Identify the study design 
+
+- Locate evidence of association 
+
+- Work through the hurdles. 
+
+]
+
+
+---
+class: inverse, middle, right
+
+# Quotas and representation
+### Bhavnani (2009)
+
+
+---
+# Diagnosing a claim (Bhavnani)
+
+.left-column[
+
+### Main question
+
+]
+
+--
+
+.right-column[
+  
+- What is the effect of electoral reserves on women's representation after the reserve is withdrawn?
+
+- More broadly, how does seeing/experiencing a woman in office influence attitudes about women in office?
+
+]
+
+---
+# Diagnosing a claim (Bhavnani)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+]
+
+--
+
+.right-column[
+  
+- Experiment: India randomly reserves 1/3 of local seats for women **at random** each election cycle
+
+- Units: wards in Mumbai, India
+
+- Key comparison
+  - 81 *control* wards: no reserve in 1997 or 2002
+  - 37 *treatment* wards: reserve in 1997 removed in 2002
+]
+
+
+---
+# Diagnosing a claim (Bhavnani)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+### Evidence
+
+]
+
+.right-column[
+  
+&gt; Do "treated" wards (relative to control wards) see more women elected, more women running, etc *after* the reserve is gone?
+  
+  
+See Table 3.
+  
+]
+
+
+
+---
+# Diagnosing a claim (Bhavnani)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+### Evidence
+
+### Validity
+
+]
+
+.right-column[
+  
+- Association?
+
+- Mechanism?
+
+- Time order?
+
+- Confounding bias?
+
+]
+
+
+---
+class: inverse, middle, right
+
+# Literacy tests and the VRA
+### Cascio and Washington (2014)
+
+
+---
+# Diagnosing a claim (Cascio and Washington)
+
+.left-column[
+
+### Main question
+
+]
+
+--
+
+.right-column[
+  
+- What is the effect of expanding black voting rights on blacks' share of public spending?
+
+- Specifically, how did the elimination of literacy tests impact state spending on education?
+
+]
+
+---
+# Diagnosing a claim (Cascio and Washington)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+]
+
+--
+
+.right-column[
+  
+- ITS: VRA eliminates literacy tests in Southern states that still used them at the time.  
+
+- Units: counties in US Southern states
+
+- Key comparison
+  - 477 *control* counties: NO lit test in 1965
+  - 625 *treatment* counties: YES literacy test
+]
+
+
+---
+# Diagnosing a claim (Cascio and Washington)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+### Evidence
+
+]
+
+.right-column[
+  
+&gt; After the VRA, did state transfers to higher black population counties increase more in "treated"/literacy test counties (relative to control counties)?
+  
+  
+See, e.g., Figures 1 and 2.
+  
+]
+
+
+
+---
+# Diagnosing a claim (Cascio and Washington)
+
+.left-column[
+
+### Main question
+
+### Design 
+
+### Evidence
+
+### Validity
+
+]
+
+.right-column[
+  
+- History?
+
+- Maturation?
+
+- Regression?
+
+- Instability?
+
+- Instrumentation or testing?
+
+]
+
+
+---
+class: inverse
+
+# Wrapping up
+
+### Internal validity
+
+- It's a researcher thing; not a software thing
+
+- Inextricably linked to research design
+
+- No "1 grand test" of validity
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
